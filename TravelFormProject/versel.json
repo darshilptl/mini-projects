@@ -1,0 +1,7 @@
+{
+    "name": "my-project",
+    "runtime": "php",
+    "env": {
+      "DATABASE_URL": "mysql://user:password@localhost:3306/my_database"
+    }
+  }

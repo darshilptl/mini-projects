@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  overflow: hidden;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  transition: background 0.2s linear;
+}
+h2 {
+  margin-top: 18px;
+}
+
+/* buttons code  */
+
+.btn {
+  margin: 2.5rem;
+  height: 200px;
+  width: 200px;
+  border-radius: 20%;
+  border: 10px solid black;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.red {
+  background-color: #d95980;
+}
+.yellow {
+  background-color: #f99b45;
+}
+.green {
+  background-color: #63aac0;
+}
+.purple {
+  background-color: #819ff9;
+}
+.flash {
+  background-color: white;
+}
+.userflash {
+  background-color: green;
+}
+
+.btn_one {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  font-weight: 700;
+  position: absolute;
+  left: 16px;
+  top: 15px;
+  line-height: 40px;
+}
+
+
+/* sidebar menu code  */
+
+.sidebar_menu {
+  position: fixed;
+  left: -300px;
+  height: 100vh;
+  width: 300px;
+  box-shadow: 0 0 6px rgb(255, 255, 255, 0.8);
+  transition: all 0.2s linear;
+  background: linear-gradient(-45deg, #5b8db5, #bc58ab);
+  /* background: #7fd8be ; */
+}
+
+.sidebar_menu .logo {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+}
+.sidebar_menu .logo a {
+  position: absolute;
+  left: 50px;
+  color: white;
+  /* color: black; */
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: 700;
+}
+.sidebar_menu .btn_two i {
+  color: rgb(105, 103, 103);
+  font-size: 25px;
+  line-height: 60px;
+  position: absolute;
+  left: 270px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  /* opacity: 0; */
+}
+
+.sidebar_menu .menu {
+  position: absolute;
+  width: 85%;
+  top: 80px;
+}
+
+.sidebar_menu .menu li {
+  margin-top: 20px;
+  padding: 30px 30px;
+}
+
+.sidebar_menu .menu i,
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.sidebar_menu .menu i {
+  padding-right: 15px;
+}
+
+.sidebar_menu .social_media {
+  position: absolute;
+  left: 20%;
+}
+.sidebar_menu .social_media i {
+  color: white;
+  opacity: 0.5;
+  padding: 0 10px;
+}
+
+#check {
+  display: none;
+}
+
+.sidebar_menu .menu li:hover {
+  box-shadow: 0 0 5px rgba(30, 26, 26, 0.5);
+}
+.btn_one i:hover {
+  font-size: 40px;
+}
+.btn_two i:hover {
+  font-size: 30px;
+}
+.sidebar_menu .social_media i:hover {
+  opacity: 1;
+  transform: scale(1.2);
+}
+#check:checked ~ .sidebar_menu {
+  left: 0;
+}
+#check:checked ~ .btn_one {
+  opacity: 0;
+}
+
+#icons {
+  position: absolute;
+  bottom: 4rem;
+}
+
+/* footer code  */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  padding: 10px 0;
+  z-index: -1;
+}
+p {
+  font-size: 25px;
+}
+
+/* All Media queries for responsivness of web  */
+
+@media screen and (max-width: 350px) {
+  #tag {
+    position: absolute;
+    left: 38%;
+    margin-top: 0.5rem;
+    font-size: 2em;
+  }
+}
+
+
+/* Responsive styles */
+@media only screen and (max-width: 767px) {
+  .btn {
+    height: 150px;
+    width: 150px;
+    margin: 1.5rem;
+  }
+  h2 {
+    margin-top: 12%;
+  }
+  .btn-container {
+    margin-top: 6%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .btn {
+    height: 180px;
+    width: 180px;
+    margin: 2rem;
+  }
+}
+
+
+/* dark and light mode button code  */
+body.dark {background-color: #292c35;} /* #9b59b6 */
+
+body.dark h1, body.dark .support a {color: #fff;}
+body.dark h2, body.dark .support a {color: #fff;}
+body.dark p, body.dark .support a {color: #fff;}
+body.dark .btn_one, body.dark .support a {color: #fff;}
+
+.checkbox2 {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label2 {
+  background-color: #111;
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label2 .ball {
+  background-color: #fff;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox2:checked + .checkbox-label2 .ball {
+  transform: translateX(24px);
+}
+.checkbox-label2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}

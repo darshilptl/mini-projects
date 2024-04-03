@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Game</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="main_box">
+        <!-- checkbox code for a sidebar button  -->
+        <input type="checkbox" id="check">
+        <div class="btn_one">
+            <label for="check"><i class="fa-solid fa-bars"></i>
+            </label>
+        </div>
+        <!-- checkbox code for a sidebar button  -->
+
+        <!-- sidebar menu code  -->
+        <div class="sidebar_menu">
+            <div class="logo"><a href="#">Simon Says</a></div>
+            <div class="btn_two">
+                <label for="check" style="color: grey;"><i class="fa-solid fa-xmark"></i></label>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-house"></i>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <hr>
+                    <li>
+                        <i class="fas fa-info-circle"></i>
+                        <a href="about.html">About</a>
+                    </li>
+                    <hr>
+                    <li id="like">
+                        <i class="fa-solid fa-heart"></i>
+                        <a href="#">Follow On</a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="social_media" id="icons">
+                <ul>
+                    <a href="https://github.com/darshilptl"><i class="fa-brands fa-github"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/%F0%9D%99%B3%F0%9D%9A%8A%F0%9D%9A%9B%F0%9D%9A%9C%F0%9D%9A%91%F0%9D%9A%92%F0%9D%9A%95-%F0%9D%99%BF%F0%9D%9A%8A%F0%9D%9A%9D%F0%9D%9A%8E%F0%9D%9A%95-42307a257/"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://twitter.com/darshilptl03"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/pateldarshil__/"><i class="fa-brands fa-instagram"></i></a>
+                </ul>
+            </div>
+        </div>
+         <!-- dark and light mode button  -->
+         <div>
+            <input type="checkbox" class="checkbox2" id="checkbox">
+            <label for="checkbox" class="checkbox-label2">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <span class="ball"></span>
+            </label>
+          </div>
+        <!-- about page code  -->
+        <div class="responsive-container-block bigContainer">
+            <div class="responsive-container-block Container bottomContainer">
+                <div class="allText bottomText">
+                    <p class="text-blk headingText">
+                        About
+                    </p>
+                    <p class="text-blk subHeadingText" id="first_text">
+                        Instruction of how to play Simon says game
+                    </p>
+                    <p class="text-blk description" id="second_text">
+                        Engage in the online version of Simon Says, where you press any key to kick off the game.
+                        Follow the flashing sequence of buttons, flex your memory muscles, and press the correct
+                        sequence. Successfully hitting the right buttons advances you to the next level, but beware
+                        - a wrong move ends the game. Press any key to restart and continue the challenge!
+                    </p>
+                    <a>
+                        <button class="explore">
+                            View More
+                        </button>
+                    </a>
+                </div>
+                <div class="videoContainer">
+                    <iframe allowfullscreen="allowfullscreen" class="mainVideo" controls="controls"
+                        src="https://www.youtube.com/embed/EWJ5uYwQJGU?si=gTijEla7PS1PI71U">
+                    </iframe>
+                    <img class="dotsImg image-block"
+                        src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/cw3.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="about.js"></script>
+</body>
+
+</html>

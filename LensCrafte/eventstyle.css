@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box;
+    overflow: hidden; */
+  }
+  .main_box {
+    /* background: linear-gradient(to right, rgb(188, 155, 155), rgb(160, 160, 255)); */
+    /* background: linear-gradient(-45deg, #f403d1,#64b5f6); */
+    background: linear-gradient(-45deg, #64b5f6,#f403d1);
+
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .btn_one {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    left: 16px;
+    top: 15px;
+    line-height: 40px;
+    opacity: 0;
+  }
+  
+  .sidebar_menu {
+    position: fixed;
+    /* left: -300px; */
+    height: 100vh;
+    width: 300px;
+    /* background-color: rgba(175, 175, 237,0.9); */
+    background: linear-gradient(-45deg, #f403d1,#64b5f6);
+    box-shadow: 0 0 6px rgb(255, 255, 255, 0.8);
+    /* transition: all 0.2s linear; */
+  }
+  
+  .sidebar_menu .logo {
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.5);
+  }
+  .sidebar_menu .logo a {
+    position: absolute;
+    left: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+  }
+  .sidebar_menu .btn_two i {
+    color: grey;
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 270px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    opacity: 0;
+  }
+  
+  .sidebar_menu .menu {
+    position: absolute;
+    width: 100%;
+    top: 80px;
+  }
+  
+  .sidebar_menu .menu li {
+    margin-top: 20px;
+    padding: 20px 20px;
+  }
+  
+  .sidebar_menu .menu i,
+  a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  .sidebar_menu .menu i {
+    padding-right: 10px;
+  }
+  
+  .sidebar_menu .social_media {
+    position: absolute;
+    left: 15%;
+    bottom: 5.5rem;
+  }
+  .sidebar_menu .social_media i {
+    color: white;
+    opacity: 0.5;
+    padding: 0 12px;
+  }
+  
+  #check {
+    display: none;
+  }
+  
+  .sidebar_menu .menu li:hover {
+    box-shadow: 0 0 5px rgba(30, 26, 26, 0.5);
+  }
+  .btn_one i:hover {
+    font-size: 40px;
+  }
+  .btn_two i:hover {
+    font-size: 30px;
+  }
+  .sidebar_menu .social_media i:hover {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  #check:checked ~ .sidebar_menu {
+    left: 0;
+  }
+  #check:checked ~ .btn_one {
+    opacity: 0;
+  }
+  
+  /* card css  */
+  .card_1 {
+    height: 500px;
+    position: absolute;
+    left: 35%;
+    border: 2px solid black;
+    border-radius: 10px;
+  
+    max-width: 400px;
+    margin: 6% auto;
+    width: 90%;
+  }
+  .card_1 img {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  .card_2 {
+    height: 500px;
+    position: absolute;
+    left: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+  
+    max-width: 400px;
+    margin: 6% auto;
+    width: 90%;
+  }
+  .card_2 img {
+    height: 300px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+  }
+  h1,
+  p {
+    margin-left: 3px;
+  }
+  p {
+    margin-top: 5px;
+    font-size: 21px;
+    font-weight: 500;
+  }
+  
+  /* Add media queries for responsiveness */
+  @media screen and (max-width: 900px) {
+    .sidebar_menu {
+      left: -300px; /* Adjust the sidebar width for smaller screens */
+      z-index: 10; 
+    }
+    .btn_one {
+      opacity: 1;
+    }
+    .card_1,
+    .card_2 {
+      width: 90%;
+      height: 530px;
+      margin-top: 50%;
+      max-width: 300px; /* Reduce the card width for smaller screens */
+    }
+    .card_1{
+      left:30%;
+    }
+    .card_2{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1330px){
+    .card_2{
+      margin-top: 70%;
+      left: 35%;
+    }
+    .sidebar_menu .btn_two  i{
+      opacity: 1; /* Adjust the close button position */
+    }
+  }
+
+.event{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.event h1{
+    margin-top: 200px;
+    position: absolute;
+    left: 52%;
+}
+.event p{
+    margin-top: 370px;
+    position: absolute;
+    left: 350px;
+}
+img{
+    border-radius: 10px;
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    left: 35%;
+    top: 35%;
+}
+@media screen and (max-width: 900px) {
+    .event h1{
+        position: absolute;
+        left: 30%;
+        margin-top: 13rem;
+    }
+    .event p{
+        margin-top: 28rem;
+        position: absolute;
+        left: 15%;
+    }
+    img{
+        border-radius: 10px;
+        width: 70%;
+        height: 50%;
+        position: absolute;
+        left: 15%;
+        margin-top: 5rem;
+    }
+}
+
+#icons{
+  position: absolute;
+  bottom: 4rem;
+}
